@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!l#&=b$-%nh)3-(k2ev+!1y%k_4vy#l+ir&78l(uy6u*hmo1om'
+SECRET_KEY = 'n5cs4k9zn*3$tes7_74kj585tp3m1c76nx%o%m%c0lmq_a&_(='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'udi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'udi',
+        'USER': 'webmaster',
+        'PASSWORD': 'spidy12#',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
